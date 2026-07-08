@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
+import "./Sidebar.css";
 
 function Sidebar() {
     const location = useLocation();
@@ -35,13 +36,19 @@ function Sidebar() {
     }
 
   return (
-        <aside>
-            <h2>{title}</h2>
-            <nav>
-                <ul>
+        <aside className="sidebar">
+            <h2 className="sidebar-title">{title}</h2>
+
+            <nav className="sidebar-nav">
+                <ul className="sidebar-menu">
                     {items.map((item) => (
-                        <li key={item.path}>
-                            <NavLink to={item.path}>{item.label}</NavLink>
+                        <li key={item.path} className="sidebar-item">
+                            <NavLink
+                                to={item.path}
+                                className="sidebar-link"
+                            >
+                                {item.label}
+                            </NavLink>
                         </li>
                     ))}
                 </ul>

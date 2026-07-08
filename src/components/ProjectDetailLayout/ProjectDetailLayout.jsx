@@ -1,23 +1,55 @@
 const projectSections = [
-    { id: "overview", title: "Overview" },
-    { id: "my-role", title: "My Role" },
-    { id: "tech-stack", title: "Tech Stack" },
-    { id: "architecture", title: "Architecture" },
-    { id: "features", title: "Features" },
-    { id: "troubleshooting", title: "Troubleshooting" },
-    { id: "retrospective", title: "Retrospective" },
+    {
+        id: "overview",
+        title: "Overview",
+        subtitle: "프로젝트 개요",
+    },
+    {
+        id: "my-role",
+        title: "My Role",
+        subtitle: "담당 역할",
+    },
+    {
+        id: "tech-stack",
+        title: "Tech Stack",
+        subtitle: "기술 스택",
+    },
+    {
+        id: "architecture",
+        title: "Architecture",
+        subtitle: "구조 설계",
+    },
+    {
+        id: "features",
+        title: "Features",
+        subtitle: "주요 기능",
+    },
+    {
+        id: "troubleshooting",
+        title: "Troubleshooting",
+        subtitle: "트러블슈팅",
+    },
+    {
+        id: "retrospective",
+        title: "Retrospective",
+        subtitle: "회고",
+    },
 ];
 
-function ProjectDetailLayout({ title }) {
+function ProjectDetailLayout({ title, sections }) {
     return (
         <main>
             <h1>{title}</h1>
 
             {projectSections.map((section) => (
                 <section id={section.id} key={section.id}>
-                    <h2>{section.title}</h2>
+                    <header>
+                        <h2>{section.title}</h2>
+                        <p>{section.subtitle}</p>
+                    </header>
+                    {sections?.[section.id]}
                 </section>
-        ))}
+            ))}
         </main>
     );
 }

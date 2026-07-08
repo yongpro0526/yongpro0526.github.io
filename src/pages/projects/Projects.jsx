@@ -12,7 +12,7 @@ const projects = [
         path: "/projects/java-bean",
     },
     {
-        title: "On-Sil",
+        title: "ChaJava",
         description: "자동차 리뷰 사이트",
         path: "/projects/chajava",
     },
@@ -25,7 +25,7 @@ function Projects() {
                 <h1>Projects</h1>
                 <p>진행한 웹 개발 프로젝트를 정리했습니다.</p>
                 <div className="project-grid">
-                    <article className="project-card">
+                    <div className="project-card">
                         {projects.map((project) => (
                             <article
                                 className="project-card"
@@ -36,7 +36,7 @@ function Projects() {
                                 <Link to={project.path}>자세히 보기</Link>
                             </article>
                         ))}
-                    </article>
+                    </div>
                 </div>
             </section>
         </main>

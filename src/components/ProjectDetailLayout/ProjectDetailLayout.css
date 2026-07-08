@@ -1,0 +1,25 @@
+.project-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+}
+
+.project-section {
+    margin-top: 96px;
+}
+
+.project-section:first-of-type {
+    margin-top: 48px;
+}
+
+.project-section-header {
+    margin-bottom: 32px;
+}
+
+.project-section-header h2 {
+    margin-bottom: 8px;
+}
+
+.project-section-header p {
+    color: #6B7280;
+}

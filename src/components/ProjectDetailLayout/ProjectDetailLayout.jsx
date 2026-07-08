@@ -1,3 +1,5 @@
+import "./ProjectDetailLayout.css";
+
 const projectSections = [
     {
         id: "overview",
@@ -38,12 +40,12 @@ const projectSections = [
 
 function ProjectDetailLayout({ title, sections }) {
     return (
-        <main>
+        <main className="project-detail">
             <h1>{title}</h1>
 
             {projectSections.map((section) => (
-                <section id={section.id} key={section.id}>
-                    <header>
+                <section className="project-section" id={section.id} key={section.id}>
+                    <header className="project-section-header">
                         <h2>{section.title}</h2>
                         <p>{section.subtitle}</p>
                     </header>

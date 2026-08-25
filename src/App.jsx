@@ -5,7 +5,7 @@ import SidebarLayout from "./layouts/SidebarLayout"
 
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact/Contact";
 import AboutRoutes from "./routes/AboutRoutes";
 import ProjectRoutes from "./routes/ProjectRoutes";
 

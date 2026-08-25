@@ -3,7 +3,7 @@ import { FaAws } from "react-icons/fa6"
 import { SiSpringboot, SiReact, SiJavascript, SiHtml5, SiCss, SiMysql, SiIntellijidea } from "react-icons/si"
 import { VscVscode } from "react-icons/vsc"
 
-import "./TeckStack.css"
+import "./TechStack.css"
 
 const techStacks = [
     {

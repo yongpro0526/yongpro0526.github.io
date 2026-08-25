@@ -8,7 +8,6 @@ import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
 import AboutRoutes from "./routes/AboutRoutes";
 import ProjectRoutes from "./routes/ProjectRoutes";
-t
 
 function App() {
     return (

@@ -1,0 +1,42 @@
+.tech-stack-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+}
+
+.tech-stack-page > h1 {
+    margin: 0 0 48px;
+}
+
+.tech-category {
+    margin-bottom: 48px;
+}
+
+.tech-category:last-child {
+    margin-bottom: 0;
+}
+
+.tech-category h2 {
+    margin: 0 0 20px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tech-icon {
+    display: flex;
+    align-items: center;
+}
+
+.tech-name {
+    color: #374151;
+}

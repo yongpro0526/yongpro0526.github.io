@@ -3,6 +3,8 @@ import { FaAws } from "react-icons/fa6"
 import { SiSpringboot, SiReact, SiJavascript, SiHtml5, SiCss, SiMysql, SiIntellijidea } from "react-icons/si"
 import { VscVscode } from "react-icons/vsc"
 
+import "./TeckStack.css"
+
 const techStacks = [
     {
         category: "Backend",
@@ -47,22 +49,28 @@ const techStacks = [
 
 function TechStack() {
     return (
-        <main>
+        <section className="tech-stack-page">
             <h1>Tech Stack</h1>
 
             {techStacks.map((group) => (
                 <section className="tech-category" key={group.category}>
                     <h2>{group.category}</h2>
 
-                    {group.skills.map((skill) => (
-                        <div className="tech-item" key={skill.name}>
-                            <span className="tech-icon">{skill.icon && skill.icon}</span>
-                            <span className="tech-name">{skill.name}</span>
-                        </div>
-                    ))}
+                    <div className="tech-list">
+                        {group.skills.map((skill) => (
+                            <div className="tech-item" key={skill.name}>
+                                <span className="tech-icon">
+                                    {skill.icon}
+                                </span>
+                                <span className="tech-name">
+                                    {skill.name}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
                 </section>
             ))}
-        </main>
+        </section>
     );
 }
 

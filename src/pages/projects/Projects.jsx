@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import "./Projects.css"
+
 const projects = [
     {
         title: "On-Sil",
@@ -20,26 +22,25 @@ const projects = [
 
 function Projects() {
     return (
-        <main>
-            <section>
+        <section className="projects">
+            <div className="projects-header">
                 <h1>Projects</h1>
                 <p>진행한 웹 개발 프로젝트를 정리했습니다.</p>
-                <div className="project-grid">
-                    <div className="project-card">
-                        {projects.map((project) => (
-                            <article
-                                className="project-card"
-                                key={project.path}
-                            >
-                                <h2>{project.title}</h2>
-                                <p>{project.description}</p>
-                                <Link to={project.path}>자세히 보기</Link>
-                            </article>
-                        ))}
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+
+            <div className="project-grid">
+                {projects.map((project) => (
+                    <article
+                        className="project-card"
+                        key={project.path}
+                    >
+                        <h2>{project.title}</h2>
+                        <p>{project.description}</p>
+                        <Link to={project.path}>자세히 보기</Link>
+                    </article>
+                ))}
+            </div>
+        </section>
     );
 }
 

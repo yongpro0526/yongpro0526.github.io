@@ -43,3 +43,11 @@
     color: #2563EB;
     font-weight: 600;
 }
+
+.layout {
+    display: flex;
+}
+
+.layout > main {
+    flex: 1;
+}

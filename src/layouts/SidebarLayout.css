@@ -1,0 +1,10 @@
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    min-height: calc(100vh - 68px);
+    padding: 40px 24px;
+    border-right: 1px solid #E5E7EB;
+}

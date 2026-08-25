@@ -1,0 +1,22 @@
+.introduce {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+}
+
+.introduce h1 {
+    margin: 0 0 48px;
+}
+
+.introduce-content {
+    max-width: 720px;
+}
+
+.introduce-content p {
+    margin: 0 0 24px;
+    line-height: 1.8;
+}
+
+.introduce-content p:last-child {
+    margin-bottom: 0;
+}
